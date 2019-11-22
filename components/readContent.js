@@ -1,6 +1,9 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
+import firebase from 'firebase';
 import styles from '../styles';
+
+import secrets from '../secrets'
 
 export default class ReadContent extends React.Component {
   constructor() {
@@ -23,9 +26,9 @@ Rawlinson, who led the engineering development of the Tesla Model S during a thr
     };
   }
 
-  // componentDidMount() {
-  //     this.loadData();
-  // }
+  componentDidMount() {
+    firebase.initializeApp(secrets.firebaseConfig);
+  }
 
   // loadData() {
   // }
