@@ -10,13 +10,14 @@ import styles from './styles';
 
 import ReadContent from './components/readContent';
 import TopBar from './components/topBar';
+import AddContent from './components/addContent';
 
 export default function App() {
   return (
     <Provider store={store}>
       <View style={styles.container}>
         <TopBar />
-        <ReadContent />
+        <AddContent />
       </View>
     </Provider>
   )
