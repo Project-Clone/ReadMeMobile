@@ -20,7 +20,11 @@ import Home from './screens/Home';
 const TabNavigator = createSwitchNavigator({
   Home: { screen:  Home},
   Articles: { screen: AllArticles }
-});
+},
+  {
+    
+  }
+);
 
 const BottomTabNavigator = createAppContainer(TabNavigator);
 
